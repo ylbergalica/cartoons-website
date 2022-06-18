@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <link rel='stylesheet' type='text/css' href='../other/styles/style.css'>
+        <link rel='stylesheet' type='text/css' href='manga.html'>
+        <link rel='stylesheet' type='text/css' href='dimensionaltwo.html'>
+        <link rel='stylesheet' type='text/css' href='dimensionalthree.html'>
+        <link rel='stylesheet' type='text/css' href='traditional.html'>
+        <!--<link rel='stylesheet' type='text/css' href='dimensionalthree.html'>-->
+
+        <title>Animation Styles</title>
+        <style>  
+        body { 
+         background: url('../images/bufi.jpg') no-repeat center fixed;  
+        
+        background-size: cover;
+        }
+           .nav-bar{
+                position: fixed;
+                transform: translateY(0%);
+                margin-bottom: 0px;
+            }
+            /* #studios_content{ */
+                /* position: static; */
+            }
+            body {
+                
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                /*font-smoothing: anti-aliased;*/
+                
+            }
+            .sidebar li{
+            list-style-type: none;
+        }
+       
+        h3 {
+            color:black;
+            /* padding-top: 30px; */
+            padding-bottom: 30px;
+            font-size: 24;
+            margin-top: ;
+        }
+            p {
+                font-size: 18px;
+                color:black;
+                text-align: justify;
+                
+            }
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #364b60;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 7vh;
+}
+
+.sidenav a {
+    margin-top: 30px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+.picture{
+    margin-top: 70px;
+    border-radius: 20px;
+    height: 400px;
+    margin-left: 180px;
+    
+    
+}
+  
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  margin-top: 5%;
+  padding: 0px 50px;
+}
+        </style>
+    </head>
+     <body onscroll='showNav()'>
+
+        <!-- header -->
+        <nav id='nav_bar' class='nav-bar'>
+			<div class='main-icon'><a href='../index.html'>CARTOONS</a></div>
+
+			<div class='nav-left'>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_0', 'nav_finger_0')" onmouseleave="leaveNavItem('nav_a_0', 'nav_finger_0')" onclick="jumpToPanel('nav_a_0')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_0"><a href='../html/history.html' id="nav_a_0">History</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_1', 'nav_finger_1')" onmouseleave="leaveNavItem('nav_a_1', 'nav_finger_1')" onclick="jumpToPanel('nav_a_1')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_1"><a href='../html/styles.html' id="nav_a_1">Styles</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_2', 'nav_finger_2')" onmouseleave="leaveNavItem('nav_a_2', 'nav_finger_2')" onclick="jumpToPanel('nav_a_2')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_2"><a href='../html/studios.html' id="nav_a_2">Studios</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_3', 'nav_finger_3')" onmouseleave="leaveNavItem('nav_a_3', 'nav_finger_3')" onclick="jumpToPanel('nav_a_3')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_3"><a href='#principalsPanel' id="nav_a_3" style="margin-left: 12px;">Principles</a></div>
+			</div>
+
+			<div class='nav-right'>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_4', 'nav_finger_4')" onmouseleave="leaveNavItem('nav_a_4', 'nav_finger_4')" onclick="jumpToPanel('nav_a_4')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_4"><a id="nav_a_4" href='../html/about.html'>About</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_5', 'nav_finger_5')" onmouseleave="leaveNavItem('nav_a_5', 'nav_finger_5')" onclick="jumpToPanel('nav_a_5')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_5"><a id="nav_a_5" href='../html/login.html'>Log In</a></div>
+				<div class='nav-cat' onmouseenter="hoverNavItem('nav_a_6', 'nav_finger_6')" onmouseleave="leaveNavItem('nav_a_6', 'nav_finger_6')" onclick="jumpToPanel('nav_a_6')"><img src="../images/pointer.png" class="nav-finger" id="nav_finger_6"><a id="nav_a_6" href='#'>Sign up</a></div>
+			</div>
+		</nav>
+        <!-- sidebar -->
+        <div class="sidenav">
+            <a href="traditional.html">Traditional</a>
+            <a href="dimensionaltwo.html">Two Dimensional</a>
+            <a href="dimensionalthree.html">Three Dimensional</a>
+            <a href="manga.html">Manga</a>
+            <a href="rotoscope.html">Rotoscope</a>
+        </div>
+    
+            <!---<div style="background-image:url('https://www.yukfoo.net/data/catalogue/items/ICEdewlineupalex_1271x635.jpg');"></div>;--->
+
+            <div>
+                <img class="picture" src="../images/cat.jpg" alt="3D" width='auto'>
+            </div>
+
+            <div id = "content" class="main">
+                <h3>Animation Styles</h3>
+                <p>Animation is a method in which figures are manipulated to appear as moving images. 
+                In traditional animation, images are drawn or painted by hand on transparent celluloid 
+                sheets to be photographed and exhibited on film. Today, most animations are made with 
+                computer-generated imagery (CGI). Computer animation can be very detailed 3D animation,
+                 while 2D computer animation (which may have the look of traditional animation) can be used 
+                 for stylistic reasons, low bandwidth, or faster real-time renderings. Other common animation 
+                 methods apply a stop motion technique to two- and three-dimensional objects like paper cutouts, 
+                 puppets, or clay figures.</p><br>
+
+                <p>An animated cartoon is an animated film, usually a short film aimed at children and featuring 
+                    an exaggerated visual style. The style takes inspiration from comic strips, often featuring
+                     anthropomorphic animals, superheroes, or the adventures of child protagonists. Especially 
+                     with animals that form a natural predator/prey relationship (e.g. cats and mice, coyotes and 
+                     birds) the action often centers around violent pratfalls such as falls, collisions and
+                      explosions that would be lethal in real life.</p><br>
+                      <p>Commonly, animators achieved the effect by a rapid succession of images that minimally 
+                          differ from each other. The illusion—as in motion pictures in general—is thought to 
+                          rely on the phi phenomenon and beta movement, but the exact causes are still uncertain.
+                           Analog mechanical animation media that rely on the rapid display of sequential images 
+                           include the phénakisticope, zoetrope, flip book, praxinoscope, and film. Television and 
+                           video are popular electronic animation media that originally were analog and now operate
+                            digitally. For display on computers, technology such as the animated GIF and Flash 
+                            animation were developed.</p>
+
+                <p> In addition to short films, feature films, television series, animated GIFs, and other media 
+                    dedicated to the display of moving images, animation is also prevalent in video games, motion 
+                    graphics, user interfaces, and visual effects.</p><br><br>
+                    
+            </div>
+	<script src='../other/script/script.js'></script>
+
+    </body>
+</html>
